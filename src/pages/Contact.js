@@ -1,76 +1,155 @@
-// pages/ContactUs.js
-import React, { useState } from 'react';
-import bg from '../assets/bg.jpg';
+import React, { useState } from "react";
+import "./Contact.css"; // Create a new CSS file or reuse About.css with modifications
 
 const Contact = () => {
-  const [form, setForm] = useState({ name: '', email: '', message: '' });
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
+  const handleChange = (e) =>
+    setFormData({ ...formData, [e.target.name]: e.target.value });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can add backend submission logic here
-    console.log('Message sent:', form);
-    alert('Thank you for contacting us!');
-    setForm({ name: '', email: '', message: '' });
+    alert("Thank you for contacting us!");
+    setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
   return (
-    <section
-      className="d-flex justify-content-center align-items-center vh-100"
-      style={{
-        background: `url(${bg}) no-repeat center/cover`,
-        padding: '40px',
-      }}
-    >
-      <div className="bg-white p-5 rounded shadow" style={{ maxWidth: '600px', width: '100%' }}>
-        <h3 className="text-center mb-4 text-warning">Contact Us</h3>
-        <form onSubmit={handleSubmit}>
-          <div className="mb-3">
-            <label htmlFor="name" className="form-label">Full Name</label>
-            <input
-              type="text"
-              name="name"
-              className="form-control"
-              id="name"
-              placeholder="Your Name"
-              value={form.name}
-              onChange={handleChange}
-              required
-            />
+    <>
+      {/* Banner / Breadcrumb */}
+      <section
+        className="breadcrumb-area style2"
+        style={{ backgroundImage: `url('images/resources/breadcrumb-bg.jpg')` }}
+      >
+        <div className="container">
+          <div className="inner-content-box text-center">
+            <h1>Contact Us</h1>
+            <p>We’re here to help and answer any question you might have.</p>
           </div>
-          <div className="mb-3">
-            <label htmlFor="email" className="form-label">Email address</label>
-            <input
-              type="email"
-              name="email"
-              className="form-control"
-              id="email"
-              placeholder="you@example.com"
-              value={form.email}
-              onChange={handleChange}
-              required
-            />
+        </div>
+      </section>
+
+      {/* Contact Info Section */}
+      <section className="contact-info-area">
+        <div className="container">
+          <div className="row justify-content-center gap-4">
+            {[
+              {
+                icon: "📍",
+                title: "Address",
+                content: "123 Modern St, New York, NY 10001",
+              },
+              {
+                icon: "📞",
+                title: "Phone",
+                content: "+971 52 513 1339",
+              },
+              {
+                icon: "✉️",
+                title: "Email",
+                content: "lovelie.gallo@gmail.com",
+              },
+              {
+                icon: "⏰",
+                title: "Working Hours",
+                content: "Mon - Fri: 9:00 AM - 6:00 PM",
+              },
+            ].map(({ icon, title, content }, i) => (
+              <div key={i} className="contact-info-card">
+                <div className="icon">{icon}</div>
+                <h3>{title}</h3>
+                <p>{content}</p>
+              </div>
+            ))}
           </div>
-          <div className="mb-4">
-            <label htmlFor="message" className="form-label">Message</label>
-            <textarea
-              name="message"
-              className="form-control"
-              id="message"
-              rows="4"
-              placeholder="Write your message here..."
-              value={form.message}
-              onChange={handleChange}
-              required
-            ></textarea>
+        </div>
+      </section>
+
+      {/* Contact Form + Map Section */}
+      <section className="contact-form-area">
+        <div className="container">
+          <div className="row contact-form-wrapper">
+            {/* Form */}
+            <div className="col contact-form-col">
+              <h2>Send Us a Message</h2>
+              <form onSubmit={handleSubmit}>
+                <label>
+                  Name
+                  <input
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    placeholder="Your full name"
+                  />
+                </label>
+
+                <label>
+                  Email
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    placeholder="Your email address"
+                  />
+                </label>
+
+                <label>
+                  Subject
+                  <input
+                    type="text"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    placeholder="Subject of your message"
+                  />
+                </label>
+
+                <label>
+                  Message
+                  <textarea
+                    name="message"
+                    rows="6"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                    placeholder="Write your message here"
+                  />
+                </label>
+
+                 <div className="button">
+                <button className="btn-one">
+                  Send Message<span className="flaticon-next"></span>
+                </button>
+              </div>
+              </form>
+            </div>
+
+            {/* Map */}
+            <div className="col map-col">
+              {/* You can replace the iframe src with your actual Google Maps embed link */}
+              <iframe
+                title="company-location"
+                src="https://maps.google.com/maps?q=new%20york&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
-          <button type="submit" className="btn btn-warning w-100 text-white fw-bold">Send Message</button>
-        </form>
-      </div>
-    </section>
+        </div>
+      </section>
+    </>
   );
 };
 

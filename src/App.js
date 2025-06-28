@@ -3,13 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
-import Hotel from "./pages/Hotel";
-import Visa from "./pages/Visa";
-import Holidays from "./pages/Holidays";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Contact from "./pages/Contact";
-import GetVisa from "./pages/GetVisa";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Testimonial from "./pages/Testimonial";
 
 
 function App() {
@@ -18,14 +17,11 @@ function App() {
       <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-           <Route path="/hotel" element={<Hotel />} />
-           <Route path="/visa" element={<Visa />} />
-           <Route path="/holidays" element={<Holidays />} />
-           <Route path="/login" element={<Login />} />
-           <Route path="/signup" element={<Signup />} />
+           <Route path="/services" element={<Services />} />
+           <Route path="/reviews" element={<Testimonial />} />
            <Route path="/contact" element={<Contact />} />
-           <Route path="/getvisa" element={<GetVisa />} />
-        </Routes>
+           <Route path="/about" element={<About />} />
+         </Routes>
       <Footer/>
     </Router>
   );

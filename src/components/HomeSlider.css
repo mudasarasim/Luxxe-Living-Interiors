@@ -1,0 +1,106 @@
+.home-slider {
+  position: relative;
+  width: 100%;
+  background: #111;
+}
+
+.slider-item {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 0 5%;
+  background: #111;
+  color: #fff;
+}
+
+.slider-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-content {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.text-content h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.play-button {
+  background: red;
+  color: white;
+  font-size: 2rem;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.more-btn {
+  text-decoration: underline;
+  font-weight: bold;
+  color: white;
+}
+
+.image-content {
+  flex: 1;
+  text-align: center;
+}
+
+.image-content img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+/* Dots and Arrows */
+.custom-dots {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-dot {
+  width: 12px;
+  height: 12px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.custom-dots li.slick-active .custom-dot {
+  background: white;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 30px;
+  color: white;
+  z-index: 2;
+}
