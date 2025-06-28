@@ -237,7 +237,7 @@ const Home = () => {
                           </div>
                           <div class="text-holder">
                             <div class="title">
-                              <h3>Commercial Design</h3>
+                              <h3>Commercial Spaces</h3>
                               <div class="count">02</div>
                             </div>
                           </div>
@@ -252,7 +252,7 @@ const Home = () => {
                           </div>
                           <div class="text-holder">
                             <div class="title">
-                              <h3>Commercial Design</h3>
+                              <h3>Commercial Spaces</h3>
                               <div class="count">02</div>
                             </div>
                             <div class="text">
@@ -278,7 +278,7 @@ const Home = () => {
                           </div>
                           <div class="text-holder">
                             <div class="title">
-                              <h3>Hospitality Design</h3>
+                              <h3>Renovation Consulting</h3>
                               <div class="count">03</div>
                             </div>
                           </div>
@@ -293,7 +293,7 @@ const Home = () => {
                           </div>
                           <div class="text-holder">
                             <div class="title">
-                              <h3>Hospitality Design</h3>
+                              <h3>Renovation Consulting</h3>
                               <div class="count">03</div>
                             </div>
                             <div class="text">
@@ -319,7 +319,7 @@ const Home = () => {
                           </div>
                           <div class="text-holder">
                             <div class="title">
-                              <h3>Industrial Design</h3>
+                              <h3>3D Modeling</h3>
                               <div class="count">04</div>
                             </div>
                           </div>
@@ -334,7 +334,7 @@ const Home = () => {
                           </div>
                           <div class="text-holder">
                             <div class="title">
-                              <h3>Industrial Design</h3>
+                              <h3>3D Modeling</h3>
                               <div class="count">04</div>
                             </div>
                             <div class="text">
@@ -353,7 +353,7 @@ const Home = () => {
               <div class="working-style-bottom text-center">
                 <p>Wanna Work With Our Experienced Profesional Team? Make an Appointment.</p>
                 <div class="button">
-                  <a class="btn-one" href="#">View All Industries<span class="flaticon-next"></span></a>
+                  <Link class="btn-one" href="#">View All Services<span class="flaticon-next"></span></Link>
                 </div>
               </div>
             </div>

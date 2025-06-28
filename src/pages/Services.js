@@ -8,6 +8,7 @@ import { Navigation, Pagination, Autoplay, Parallax } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   const historyItems = [
@@ -58,7 +59,7 @@ const Services = () => {
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
                         <div class="single-service-style2 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1200ms">
                             <div class="img-holder">
-                                <img src="images/services/v2-1.jpg" alt="Awesome Image"/>
+                                <img src="images/services/v2-2.jpg" alt="Awesome Image"/>
                                 <div class="overlay-style-two"></div>
                             </div>
                             <div class="text-holder">
@@ -66,12 +67,12 @@ const Services = () => {
                                     <span class="icon-concept"></span>
                                 </div>
                                 <div class="inner">
-                                    <h3>Concept Designs</h3>
+                                    <h3>Residential Design</h3>
                                     <div class="text">
                                         <p>Indignation dislike are beguile works & demoralized the charms except to obtain some advantage from it.</p>
                                     </div>
                                     <div class="read-more">
-                                        <a class="btn-one" href="blog.html">Read More<span class="flaticon-next"></span></a>
+                                        <Link class="btn-one" to={'/ServiceDetailPage'}>Read More<span class="flaticon-next"></span></Link>
                                     </div>
                                 </div>
                             </div>
@@ -80,7 +81,7 @@ const Services = () => {
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
                         <div class="single-service-style2 wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1200ms">
                             <div class="img-holder">
-                                <img src="images/services/v2-2.jpg" alt="Awesome Image"/>
+                                <img src="images/services/v2-1.jpg" alt="Awesome Image"/>
                                 <div class="overlay-style-two"></div>
                             </div>
                             <div class="text-holder">
@@ -88,12 +89,12 @@ const Services = () => {
                                     <span class="icon-scheme"></span>
                                 </div>
                                 <div class="inner">
-                                    <h3>Project Designs</h3>
+                                    <h3>Commercial Spaces</h3>
                                     <div class="text">
                                         <p>Our power of choice untrammelled all nothing prevents best choice untrammeled when nothing prevents .</p>
                                     </div>
                                     <div class="read-more">
-                                        <a class="btn-one" href="blog.html">Read More<span class="flaticon-next"></span></a>
+                                        <Link class="btn-one" to={'/ServiceDetailPage'}>Read More<span class="flaticon-next"></span></Link>
                                     </div>
                                 </div>
                             </div>
@@ -110,12 +111,12 @@ const Services = () => {
                                     <span class="icon-cupboard"></span>
                                 </div>
                                 <div class="inner">
-                                    <h3>Make Overs</h3>
+                                    <h3>Renovation Consulting</h3>
                                     <div class="text">
                                         <p>Every pleasure to be welcomed every circumstances and owing power occur that repudiated & annoyances .</p>
                                     </div>
                                     <div class="read-more">
-                                        <a class="btn-one" href="blog.html">Read More<span class="flaticon-next"></span></a>
+                                        <Link class="btn-one" to={'/ServiceDetailPage'}>Read More<span class="flaticon-next"></span></Link>
                                     </div>
                                 </div>
                             </div>
@@ -132,12 +133,12 @@ const Services = () => {
                                     <span class="icon-teacher"></span>
                                 </div>
                                 <div class="inner">
-                                    <h3>Consulting</h3>
+                                    <h3>3D Modeling</h3>
                                     <div class="text">
                                         <p>Every pleasure to be welcomed every circumstances and owing power occur that repudiated & annoyances .</p>
                                     </div>
                                     <div class="read-more">
-                                        <a class="btn-one" href="blog.html">Read More<span class="flaticon-next"></span></a>
+                                        <Link class="btn-one" to={'/ServiceDetailPage'}>Read More<span class="flaticon-next"></span></Link>
                                     </div>
                                 </div>
                             </div>
@@ -159,7 +160,7 @@ const Services = () => {
                                         <p>Indignation dislike are beguile works & demoralized the charms except to obtain some advantage from it.</p>
                                     </div>
                                     <div class="read-more">
-                                        <a class="btn-one" href="blog.html">Read More<span class="flaticon-next"></span></a>
+                                        <Link class="btn-one" to={'/ServiceDetailPage'}>Read More<span class="flaticon-next"></span></Link>
                                     </div>
                                 </div>
                             </div>
@@ -181,7 +182,7 @@ const Services = () => {
                                         <p>Our power of choice untrammelled all nothing prevents best choice untrammeled when nothing prevents.</p>
                                     </div>
                                     <div class="read-more">
-                                        <a class="btn-one" href="blog.html">Read More<span class="flaticon-next"></span></a>
+                                        <Link class="btn-one" to={'/ServiceDetailPage'}>Read More<span class="flaticon-next"></span></Link>
                                     </div>
                                 </div>
                             </div>
