@@ -140,13 +140,13 @@ const Home = () => {
                 <div className="sec-title">
                   <p>About Company</p>
                   <div className="title">
-                    Recognized <br />interior & exterior<br /><span> designer in USA</span>
+                    Recognized <br />interior & exterior<br /><span> designers</span>
                   </div>
                 </div>
                 <div className="text">
                   <p>We denounce with righteous indignation and dislike men who are beguiled and demoralized by the charms of pleasures that moment, so blinded by desires, that they cannot foresee indignations some dislike mens who are so beguiled demoralized.</p>
                 </div>
-                <div className="authorised-info">
+                {/* <div className="authorised-info">
                   <div className="signature">
                     <img src="images/icon/signature.png" alt="Signature" />
                   </div>
@@ -154,8 +154,8 @@ const Home = () => {
                     <h3>KL. Carl Ambrose</h3>
                     <p>Chairman & Founder</p>
                   </div>
-                </div>
-                <div className="button">
+                </div> */}
+                <div className="button" style={{marginTop: '-60px'}}>
                   <Link className="btn-one" to={'/about'}>More About Us<span className="flaticon-next"></span></Link>
                 </div>
               </div>
@@ -166,10 +166,10 @@ const Home = () => {
                   <img src="images/resources/about-style2-image.jpg" alt="About" />
                   <div className="overlay-box">
                     <div className="title">
-                      <h1>27 <span>Years Experience<br /> in this Field</span></h1>
+                      <h1>7+ <span>Years Experience<br /> in this Field</span></h1>
                     </div>
                     <div className="button">
-                      <Link to={'/about'}><span className="icon-back"></span></Link>
+                      <a target='blank' href='https://www.instagram.com/lovelie.interiors1/'><span className="icon-back"></span></a>
                     </div>
                   </div>
                 </div>

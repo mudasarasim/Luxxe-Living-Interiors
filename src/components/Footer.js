@@ -23,7 +23,7 @@ const Footer = () => (
                                     <ul>
                                         <li><a href="#">Facebook</a></li>
                                         <li><a href="#">Twitter</a></li>
-                                        <li><a href="#">Instagram</a></li>
+                                        <li><a href=" https://www.instagram.com/lovelie.interiors1/" target='blank'>Instagram</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -77,7 +77,7 @@ const Footer = () => (
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                         <div class="copyright-text text-center">
-                            <p><a href="https://www.templateshub.net" target="_blank">Templates Hub</a></p>
+                            <p><a href="https://xpertonecreative.com/" target="_blank">Expertone Creatives</a></p>
                         </div>
                     </div>
                 </div>

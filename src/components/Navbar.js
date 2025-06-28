@@ -28,10 +28,7 @@ const Navbar = () => {
           </div>
           <div className="top-style2-right">
             <ul className="topbar-social-links">
-              <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i className="fa fa-skype"></i></a></li>
-              <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
+              <li><a href=" https://www.instagram.com/lovelie.interiors1/" style={{color: 'grey'}} target='blank'>Connect With Us On <i className="fa fa-instagram"></i> Instagram</a></li>
             </ul>
           </div>
         </div>

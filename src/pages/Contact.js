@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Contact.css"; // Create a new CSS file or reuse About.css with modifications
+import "./Contact.css"; // Make sure your styles are updated here
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -23,7 +23,9 @@ const Contact = () => {
       {/* Banner / Breadcrumb */}
       <section
         className="breadcrumb-area style2"
-        style={{ backgroundImage: `url('images/resources/breadcrumb-bg.jpg')` }}
+        style={{
+          backgroundImage: `url('images/resources/breadcrumb-bg.jpg')`,
+        }}
       >
         <div className="container">
           <div className="inner-content-box text-center">
@@ -41,7 +43,7 @@ const Contact = () => {
               {
                 icon: "📍",
                 title: "Address",
-                content: "123 Modern St, New York, NY 10001",
+                content: "Al Hazm Building, Hor AL Anz, Dubai, UAE",
               },
               {
                 icon: "📞",
@@ -124,20 +126,19 @@ const Contact = () => {
                   />
                 </label>
 
-                 <div className="button">
-                <button className="btn-one">
-                  Send Message<span className="flaticon-next"></span>
-                </button>
-              </div>
+                <div className="button">
+                  <button className="btn-one" type="submit">
+                    Send Message <span className="flaticon-next"></span>
+                  </button>
+                </div>
               </form>
             </div>
 
             {/* Map */}
             <div className="col map-col">
-              {/* You can replace the iframe src with your actual Google Maps embed link */}
               <iframe
                 title="company-location"
-                src="https://maps.google.com/maps?q=new%20york&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=Office%20No%3A9%2C%20Al%20Hazm%20Building%2C%20Hor%20AL%20Anz%2C%20Dubai&t=&z=17&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
