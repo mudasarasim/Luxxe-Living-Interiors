@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./Contact.css"; // Make sure your styles are updated here
+import axios from "axios";
+import "./Contact.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -8,14 +9,25 @@ const Contact = () => {
     subject: "",
     message: "",
   });
+  const [success, setSuccess] = useState("");
+  const [error, setError] = useState("");
 
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert("Thank you for contacting us!");
-    setFormData({ name: "", email: "", subject: "", message: "" });
+    setSuccess("");
+    setError("");
+
+    try {
+      await axios.post("http://localhost:5001/api/contact", formData);
+      setSuccess("✅ Thank you for contacting us!");
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } catch (err) {
+      console.error(err);
+      setError("❌ Failed to send message. Please try again later.");
+    }
   };
 
   return (
@@ -78,6 +90,10 @@ const Contact = () => {
             {/* Form */}
             <div className="col contact-form-col">
               <h2>Send Us a Message</h2>
+
+              {success && <div className="alert alert-success">{success}</div>}
+              {error && <div className="alert alert-danger">{error}</div>}
+
               <form onSubmit={handleSubmit}>
                 <label>
                   Name

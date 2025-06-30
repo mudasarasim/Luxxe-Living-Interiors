@@ -10,6 +10,8 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Testimonial from "./pages/Testimonial";
 import ServiceDetailPage from "./pages/ServiceDetailPage";
+import AdminLogin from "./pages/AdminLogin";
+import AdminDashboard from "./pages/AdminDashboard";
 
 
 function App() {
@@ -23,6 +25,9 @@ function App() {
            <Route path="/contact" element={<Contact />} />
            <Route path="/about" element={<About />} />
            <Route path="/ServiceDetailPage" element={<ServiceDetailPage />} />
+           <Route path="/admin/login" element={<AdminLogin />} />
+<Route path="/admin/dashboard" element={<AdminDashboard />} />
+
          </Routes>
       <Footer/>
     </Router>
